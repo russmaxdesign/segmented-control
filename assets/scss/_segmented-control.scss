@@ -1,0 +1,117 @@
+// base styles
+
+form {
+  margin: 1em 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  display: block;
+  margin: 0 0 .5em;
+  font-weight: bold;
+}
+
+// segmented-control
+
+.segmented-control {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    border: 1px solid $primary-color;
+    border-left: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  li:first-child {
+    border-left: 1px solid $primary-color;
+    border-radius: .3em 0 0 .3em;
+  }
+
+  li:last-child {
+    border-radius: 0 .3em.3em 0;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  label {
+    z-index: 1;
+    display: block;
+    padding: .5em 1em;
+    color: $primary-color;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  li:first-child label {
+    border-radius: .3em 0 0 .3em;
+  }
+
+  li:last-child label {
+    border-radius: 0 .3em.3em 0;
+  }
+
+  label:hover {
+    background: lighten($primary-color, 45%);
+  }
+
+  input:checked + label {
+    color: #fff;
+    background: $primary-color;
+  }
+
+  input:checked + label:hover {
+    color: #fff;
+    background: lighten($primary-color, 20%);
+  }
+
+  input:focus + label {
+    color: #fff;
+    background: darken($primary-color, 20%);
+  }
+
+}
+
+
+// stetched
+
+.segmented-control--stretched {
+  li {
+    flex-grow: 1;
+  }
+}
+
+
+// sized
+
+.segmented-control--sized {
+  li {
+    width: 9em;
+  }
+}
+
+
+// centered
+
+.segmented-control--centered {
+  justify-content: center;
+}
