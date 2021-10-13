@@ -1014,7 +1014,7 @@ legend {
 .segmented-control li:first-child label{border-radius:.3em 0 0 .3em}
 .segmented-control li:last-child label{border-radius:0 0.3em 0.3em 0}
 .segmented-control label:hover{background:#cee3fa}
-.segmented-control input:focus+label{color:#fff;background:#000;position:relative;z-index:1;box-shadow:0 0 0 2px #fff,0 0 0 4px black;}
+.segmented-control input:focus+label{color:#166DCC;background:#fff;position:relative;z-index:1;box-shadow:0 0 0 2px #fff,0 0 0 5px black;}
 .segmented-control input:checked+label{color:#fff;background:#166DCC}
 .segmented-control input:checked+label:hover{color:#fff;background:#5ba1ed}
 .segmented-control--stretched li{flex-grow:1}
